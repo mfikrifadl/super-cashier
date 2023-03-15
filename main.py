@@ -166,7 +166,7 @@ def total_price() :
         elif total_purchases > 200000 :
             discount = 5
         
-        final_total_purchases = total_purchases + (total_purchases * discount / 100)
+        final_total_purchases = total_purchases - (total_purchases * discount / 100)
 
         if(discount > 0) :
             print(f"Total belanjaan ID Pesanan {transaction_id} mendapatkan discount {discount}% menjadi Rp {final_total_purchases}")
