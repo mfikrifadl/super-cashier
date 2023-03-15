@@ -22,14 +22,18 @@ Cashier sederhana dengan menggunakan bahasa pemrograman Python.
 # Hasil Test Case
 1. Penambahan Item Baru
     - Berhasil menambahkan item
-        ![image](https://user-images.githubusercontent.com/44435085/225379834-bee98e86-7a8a-49b0-99e7-f799f00d7b35.png)
+        
+    ![image](https://user-images.githubusercontent.com/44435085/225379834-bee98e86-7a8a-49b0-99e7-f799f00d7b35.png)
         
     - Menampilkan item yang berhasil ditambahkan
-        ![image](https://user-images.githubusercontent.com/44435085/225380210-a7ab3a8c-c41b-4829-aaf7-dc17da415247.png)
+    
+    ![image](https://user-images.githubusercontent.com/44435085/225380210-a7ab3a8c-c41b-4829-aaf7-dc17da415247.png)
 
 2. Ubah nama item
     - Berhasil ubah nama item
-        ![image](https://user-images.githubusercontent.com/44435085/225380442-9baeba17-97f0-4dad-a65c-86950bd3a285.png)
+        
+    ![image](https://user-images.githubusercontent.com/44435085/225380442-9baeba17-97f0-4dad-a65c-86950bd3a285.png)
         
     - Menampilkan item yang berhasil diubah
-        ![image](https://user-images.githubusercontent.com/44435085/225380595-3af1b941-67b2-4af4-b633-7161eef79423.png)
+    
+    ![image](https://user-images.githubusercontent.com/44435085/225380595-3af1b941-67b2-4af4-b633-7161eef79423.png)
