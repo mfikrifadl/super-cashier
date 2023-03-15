@@ -37,3 +37,12 @@ Cashier sederhana dengan menggunakan bahasa pemrograman Python.
     - Menampilkan item yang berhasil diubah
     
     ![image](https://user-images.githubusercontent.com/44435085/225380595-3af1b941-67b2-4af4-b633-7161eef79423.png)
+    
+3. Menghitung total belanja
+    - Menampilkan list semua belanja
+    
+    ![image](https://user-images.githubusercontent.com/44435085/225381558-d6590427-5798-48d2-a840-87f14dd46810.png)
+
+    - Menhitung total belanja
+
+    ![image](https://user-images.githubusercontent.com/44435085/225381767-70f986a1-a76c-4769-8408-70b211c0455d.png)
