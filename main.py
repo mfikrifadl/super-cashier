@@ -1,11 +1,12 @@
 import time
+from tabulate import tabulate
 
 list_transaction = {}
 total_purchases = 0
 check = False
 
 def menu():
-    """Fungsi untuk menampilkan daftar tugas.
+    """Fungsi untuk menampilkan daftar menu.
     """
 
     print("-"*60)
@@ -125,22 +126,22 @@ def check_order() :
         global check
         global total_purchases
 
-        print('-'*63)
+        headers = ["No","Nama Item", "Jumlah Item", "Harga/Item", "Total harga"]
 
-        print("{:<2} {:<10} {:<2} {:<6} {:<10}".format('| No', ' | Nama Item', ' | Jumlah Item', ' | Harga/Item', ' | Total harga |'))
-        print("{:<2} {:<10} {:<2} {:<6} {:<10}".format('|' + '-'*4, '|' + '-'*11, '|' + '-'*13, '|' + '-'*12, '|' + '-'*13 + '|'))
         no = 1
         total_purchases = 0
         check = True
+        table = []
         for x in list_transaction:
             total = (list_transaction[x]['price'] * list_transaction[x]['qty'])
             total_purchases += total
-            print("{:1} {:^3} {:1} {:^10} {:1} {:^12} {:1} {:^11} {:1} {:^11} {:1}".format('|', str(no), '|', x, '|', str(list_transaction[x]['qty']), '|', str(list_transaction[x]['price']), '|', str(total), '|'))
             if x == '' or str(list_transaction[x]['qty']) == '' or str(list_transaction[x]['price']) == '' :
                 check = False
+            
+            table.append([no, x, list_transaction[x]['qty'], list_transaction[x]['price'], total])
             no += 1
 
-        print('-'*63)
+        print(tabulate(table, headers, tablefmt="pretty"))
 
         if check :
             print("Pesanan sudah sesuai")
