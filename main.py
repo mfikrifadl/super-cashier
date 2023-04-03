@@ -5,9 +5,8 @@ list_transaction = {}
 total_purchases = 0
 check = False
 
+# fungsi untuk menampilkan daftar menu
 def menu():
-    """Fungsi untuk menampilkan daftar menu.
-    """
 
     print("-"*60)
     print("SELAMAT DATANG DI CASHIER ANDI")
@@ -57,10 +56,12 @@ def menu():
         print(str(e))
         menu()
 
+# fungsi untuk generate transaction id
 def getTransactionId(name_customer) :
     ts = time.time()
     return name_customer + str(ts)
 
+# fungsi untuk menambahkan item
 def add_item() :
     item_name = input('Masukkan Nama Barang : ')
     item_name = item_name.lower()
@@ -73,6 +74,7 @@ def add_item() :
         print("Barang berhasil ditambahkan!")
     menu()
 
+# fungsi untuk mengubah nama item
 def update_item_name() :
     item_name = input('Masukkan Nama Barang : ')
     item_name = item_name.lower()
@@ -84,6 +86,7 @@ def update_item_name() :
         print("Nama item tidak ada")
     menu()
 
+# fungsi untuk mengubah jumlah item
 def update_item_qty() :
     item_name = input('Masukkan Nama Barang : ')
     item_name = item_name.lower()
@@ -95,6 +98,7 @@ def update_item_qty() :
         print("Nama item tidak ada")
     menu()
 
+# fungsi untuk mengubah harga item
 def update_item_price() :
     item_name = input('Masukkan Nama Barang : ')
     item_name = item_name.lower()
@@ -106,6 +110,7 @@ def update_item_price() :
         print("Nama item tidak ada")
     menu()
 
+# fungsi untuk hapus item
 def delete_item() :
     item_name = input('Masukkan Nama Barang : ')
     item_name = item_name.lower()
@@ -116,11 +121,13 @@ def delete_item() :
         print("Nama item tidak ada")
     menu()
 
+# fungsi untuk reset list item
 def reset_transaction() :
     list_transaction.clear()
     print("Data berhasil direset!")
     menu()
 
+# fungsi untuk cek apakah order sudah benar
 def check_order() :
     if len(list_transaction) > 0 :
         global check
@@ -153,6 +160,7 @@ def check_order() :
 
     menu()
 
+# fungsi untuk kalkulasi diskon dan print total belanja
 def total_price() :
     global check
     global total_purchases
@@ -178,6 +186,7 @@ def total_price() :
     
     menu()
 
+# fungsi untuk cek apakah nama item sudah ada atau belum
 def check_name(name) :
     if name in list_transaction :
         return True
